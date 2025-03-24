@@ -1,0 +1,63 @@
+0:	learn: 0.7921632	test: 0.7882303	best: 0.7882303 (0)	total: 307ms	remaining: 5m 6s
+Stopped by overfitting detector  (50 iterations wait)
+
+bestTest = 0.8029424247
+bestIteration = 1
+
+Shrink model to first 2 iterations.
+Feature Importance (All Features):
+                 Feature  Importance
+13               GenHlth   37.599129
+21             BMI_X_Age   32.136064
+30       condition_count   22.135529
+32       risk_score_mult    7.615495
+9                Veggies    0.513783
+20                Income    0.000000
+22     HighBP_X_HighChol    0.000000
+23    GenHlth_X_PhysHlth    0.000000
+24    BMI_X_PhysActivity    0.000000
+25          Age_X_HighBP    0.000000
+18                   Age    0.000000
+26    Income_X_Education    0.000000
+27        Age_X_DiffWalk    0.000000
+28       health_bp_decay    0.000000
+29               low_ses    0.000000
+31        health_cluster    0.000000
+19             Education    0.000000
+0                 HighBP    0.000000
+17                   Sex    0.000000
+1               HighChol    0.000000
+15              PhysHlth    0.000000
+14              MentHlth    0.000000
+12           NoDocbcCost    0.000000
+11         AnyHealthcare    0.000000
+10     HvyAlcoholConsump    0.000000
+8                 Fruits    0.000000
+7           PhysActivity    0.000000
+6   HeartDiseaseorAttack    0.000000
+5                 Stroke    0.000000
+4                 Smoker    0.000000
+3                    BMI    0.000000
+2              CholCheck    0.000000
+16              DiffWalk    0.000000
+0:	learn: 0.7946388	test: 0.7887962	best: 0.7887962 (0)	total: 81ms	remaining: 1m 20s
+Stopped by overfitting detector  (50 iterations wait)
+
+bestTest = 0.8060546046
+bestIteration = 3
+
+Shrink model to first 4 iterations.
+
+Final model performance with top 10 features:
+              precision    recall  f1-score   support
+
+           0       0.77      0.66      0.72      7070
+           1       0.71      0.81      0.75      7069
+
+    accuracy                           0.74     14139
+   macro avg       0.74      0.74      0.73     14139
+weighted avg       0.74      0.74      0.73     14139
+
+
+Final Selected Features:
+['GenHlth', 'BMI_X_Age', 'condition_count', 'risk_score_mult', 'Veggies', 'Income', 'HighBP_X_HighChol', 'GenHlth_X_PhysHlth', 'BMI_X_PhysActivity', 'Age_X_HighBP']
